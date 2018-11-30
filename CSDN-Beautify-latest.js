@@ -20,7 +20,8 @@
 (function () {
     'use strict';
     //阅读全文
-    $('#btn-readmore').click();
+    $('.hide-article-box').remove();
+    $('#article_content').css({'height':'initial'});
     //vip免广告 按钮
     $('.meau-gotop-box').remove();
     //未登录提示
