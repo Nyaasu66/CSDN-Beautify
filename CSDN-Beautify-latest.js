@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name        【CSDN美化】-旧版两栏+屏宽自动适配+自动展开+去广告
+// @name        【CSDN全能美化脚本】-免登陆+旧版两栏+屏宽自动适配+自动展开+去广告
 // @description  还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
 // @description:zh-TW   還你一個經典版的CSDN：作者信息和頂部導航欄保留，去掉右側評論區；內容自動展開；去廣告；屏寬自動適配；淨化剪貼板。
 // @description:zh-HK   還你一個經典版的CSDN：作者信息和頂部導航欄保留，去掉右側評論區；內容自動展開；去廣告；屏寬自動適配；淨化剪貼板。
 // @description:zh-CN   还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
 
 // @namespace    https://github.com/z1064244797/CSDN-Beautify
-// @version      2.2
+// @version      2.4
 // @author       Nyaasu
 // @match        http*://blog.csdn.net/*/article/details/*
 // @run-at       document-end
@@ -80,5 +80,6 @@
     }
     window.onresize=function() {resize()}
     resize();
-    //（已发现但暂时无法解决的问题：评论区无法在底部显示，页面底部的广告因太顽强而无法移除）
+    //显示评论区
+    $('.comment-list-box').css({'display':'block'});
 })();
