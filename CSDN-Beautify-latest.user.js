@@ -1,20 +1,21 @@
 // ==UserScript==
-// @name        【CSDN全能美化脚本】-免登陆+旧版两栏+屏宽自动适配+自动展开+去广告
-// @description  还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
+// @name                CSDN-Beautify
+// @name:zh-CN          CSDN全能美化脚本-免登陆+旧版两栏+屏宽自动适配+自动展开+去广告
+// @description         还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
 // @description:zh-TW   還你一個經典版的CSDN：作者信息和頂部導航欄保留，去掉右側評論區；內容自動展開；去廣告；屏寬自動適配；淨化剪貼板。
 // @description:zh-HK   還你一個經典版的CSDN：作者信息和頂部導航欄保留，去掉右側評論區；內容自動展開；去廣告；屏寬自動適配；淨化剪貼板。
 // @description:zh-CN   还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
 
 // @namespace    https://github.com/z1064244797/CSDN-Beautify
-// @version      2.4
+// @version      2.5
 // @author       Nyaasu
-// @match        http*://blog.csdn.net/*/article/details/*
+// @match        *://blog.csdn.net/*/article/details/*
 // @run-at       document-end
 // @grant        none
 // @license      CC-BY-NC-3.0
 // @supportURL   https://github.com/z1064244797/CSDN-Beautify/issues
 // @date         05/11/2018
-// @modified     23/11/2018
+// @modified     03/30/2019
 // ==/UserScript==
 
 (function () {
