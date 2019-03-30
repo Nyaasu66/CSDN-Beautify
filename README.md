@@ -1,6 +1,6 @@
-## 【CSDN美化】-旧版两栏+自动展开+去广告+净化剪贴板+屏宽自动适配
+## CSDN美化-旧版两栏+自动展开+去广告+净化剪贴板+屏宽自动适配
 
-### （注：2.1版本后namespace发生了改变，更新后请将更新前的脚本删除）
+### （注：2.5版本后namespace发生了改变，更新后请将更新前的脚本删除）
 
 * 作者信息和顶部导航栏保留
 * 博客样式回退为经典两栏版：去掉右边评论区
@@ -10,6 +10,16 @@
 * 去掉未登录提示和VIP免广告按钮
 * 净化剪贴板
 
-> 已发现但暂时无法解决的问题：评论区无法在底部显示，页面底部的广告因太顽强而无法移除
+#### Contributors: ivysrono, jiang-xiche, Nyaasu.
 
-[Greasy Fork 上的 脚本发布页面](https://greasyfork.org/zh-CN/scripts/373974/versions/new)
+### 更新历史
+
+#### V2.5
+
+1. 更新支持在GitHub直接安装;
+2. 更新支持 Violentmonkey;
+3. namespace 去掉了 '【】' 符号.
+
+
+
+[Greasy Fork 上的 脚本发布页面](https://greasyfork.org/zh-CN/scripts/373974)
