@@ -10,9 +10,13 @@
 * 去掉未登录提示和VIP免广告按钮
 * 净化剪贴板
 
-#### Contributors: ivysrono, jiang-xiche, Nyaasu.
+#### Contributors: AndrewChao, ivysrono, jiang-xiche, Nyaasu.
 
 ### 更新历史
+
+#### V2.6
+
+1. 新功能：支持免登陆显示所有评论.
 
 #### V2.5
 
