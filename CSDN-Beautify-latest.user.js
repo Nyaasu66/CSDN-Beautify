@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name                CSDN-Beautify
-// @name:zh-CN          CSDN全能美化脚本-免登陆+旧版两栏+屏宽自动适配+自动展开+去广告
+// @name                CSDN优雅美化脚本-免登陆+旧版两栏+屏宽自动适配+自动展开+去广告
+// @name:zh-CN          CSDN优雅美化脚本-免登陆+旧版两栏+屏宽自动适配+自动展开+去广告
 // @description         还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
 // @description:zh-TW   還你一個經典版的CSDN：作者信息和頂部導航欄保留，去掉右側評論區；內容自動展開；去廣告；屏寬自動適配；淨化剪貼板。
 // @description:zh-HK   還你一個經典版的CSDN：作者信息和頂部導航欄保留，去掉右側評論區；內容自動展開；去廣告；屏寬自動適配；淨化剪貼板。
 // @description:zh-CN   还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
 
 // @namespace    https://github.com/z1064244797/CSDN-Beautify
-// @version      2.6
+// @version      2.7
 // @author       Nyaasu
 // @match        *://blog.csdn.net/*/article/details/*
 // @run-at       document-end
@@ -37,6 +37,9 @@
     $('.tool-box').remove()
     //下部推荐
     $('.recommend-box').remove();
+    //取消注册登录弹出
+    $('#passportbox').remove();
+    $('.login-mark').remove();
     //两栏处理
     $('.nodata .container').css({'width':'1318px !important'})
     $('.nodata .tool-box .meau-list .btn-like-box p').css({'display': 'block'})
