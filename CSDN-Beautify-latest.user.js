@@ -38,9 +38,6 @@
     // $('.tool-box').remove()
     //下部推荐
     // $('.recommend-box').remove();
-    //取消注册登录弹出
-    $('#passportbox').remove();
-    $('.login-mark').remove();
     //两栏处理
     $('.blog_container_aside').remove();
     // $('.nodata .container').css({'width':'1318px !important'})
@@ -81,6 +78,9 @@
             "margin": "0 auto"
         });
         resize();
+        //取消注册登录弹出
+        $('#passportbox').remove();
+        $('.login-mark').remove();
     }, 800)
     // 屏宽适配
 
