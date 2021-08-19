@@ -19,6 +19,9 @@
 
 (function () {
     'use strict';
+    //未登录复制代码限制
+    $('code').css({'user-select':'unset'})
+    $('#content_views pre').css({'user-select':'unset'})
     //阅读全文
     $('.hide-article-box').remove();
     $('#article_content').css({
