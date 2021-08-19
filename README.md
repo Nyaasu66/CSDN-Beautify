@@ -10,7 +10,10 @@
 * 去掉未登录提示和VIP免广告按钮
 * 净化剪贴板
 
-#### Contributors: AndrewChao, ivysrono, jiang-xiche, Nyaasu.
+#### Contributors: crazcell, AndrewChao, ivysrono, jiang-xiche, Nyaasu.
+
+[Greasy Fork 上的 脚本发布页面](https://greasyfork.org/zh-CN/scripts/373974)
+
 
 ### 更新历史
 
@@ -24,6 +27,8 @@
 1. 开启并更新两栏样式
 2. 更新广告拦截语法
 
+#### V2.7.4
+1. 紧急注释部分代码，CSDN官方恢复两栏样式
 
 #### V2.7.3
 
