@@ -7,14 +7,14 @@
 // @description:zh-CN   还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
 
 // @namespace    https://github.com/z1064244797/CSDN-Beautify
-// @version      2.8.1
+// @version      2.9.0
 // @author       Nyaasu
 // @match        *://blog.csdn.net/*/article/details/*
 // @run-at       document-end
 // @grant        none
 // @license      CC-BY-NC-3.0
 // @supportURL   https://github.com/z1064244797/CSDN-Beautify/issues
-// @date         05/11/2018
+// @date         08/19/2021
 // ==/UserScript==
 
 (function () {
