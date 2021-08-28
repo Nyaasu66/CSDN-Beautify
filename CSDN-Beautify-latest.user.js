@@ -10,6 +10,7 @@
 // @version      2.9.0
 // @author       Nyaasu
 // @match        *://blog.csdn.net/*/article/details/*
+// @match        *://csdnnews.blog.csdn.net/article/details/*
 // @run-at       document-end
 // @grant        none
 // @license      CC-BY-NC-3.0
