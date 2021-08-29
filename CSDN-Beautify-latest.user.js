@@ -7,7 +7,7 @@
 // @description:zh-CN   还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
 
 // @namespace    https://github.com/z1064244797/CSDN-Beautify
-// @version      2.9.1
+// @version      2.9.2
 // @author       Nyaasu
 // @match        http*://blog.csdn.net/*/article/details/*
 // @match        http*://csdnnews.blog.csdn.net/article/details/*
