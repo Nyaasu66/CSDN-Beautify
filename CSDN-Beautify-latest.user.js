@@ -9,8 +9,8 @@
 // @namespace    https://github.com/z1064244797/CSDN-Beautify
 // @version      2.9.1
 // @author       Nyaasu
-// @match        *://blog.csdn.net/*/article/details/*
-// @match        *://csdnnews.blog.csdn.net/article/details/*
+// @match        http*://blog.csdn.net/*/article/details/*
+// @match        http*://csdnnews.blog.csdn.net/article/details/*
 // @run-at       document-end
 // @grant        none
 // @license      CC-BY-NC-3.0
@@ -137,9 +137,9 @@
             $(".csdn-toolbar > div").css("width", "870px");
         }
     }
-    window.onresize = function () {
-        resize()
-    }
+    window.addEventListener('resize', function () {
+        resize();
+    });
     // //显示评论区
     // $('.comment-list-box').css({'display':'block'});
     // $('.comment-list-box').css({'max-height':'870px'});
