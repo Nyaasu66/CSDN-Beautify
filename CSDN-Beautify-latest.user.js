@@ -7,7 +7,7 @@
 // @description:zh-CN   还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
 
 // @namespace    https://github.com/z1064244797/CSDN-Beautify
-// @version      2.9.5
+// @version      2.9.6
 // @author       Nyaasu
 // @match        http*://blog.csdn.net/*/article/details/*
 // @match        http*://csdnnews.blog.csdn.net/article/details/*
@@ -20,6 +20,56 @@
 
 (function () {
     'use strict';
+    // CSS （用魔法来打败魔法）
+    const style = document.createElement('style');
+    style.innerHTML = `
+    .passport-login-container {
+        display: none;
+    }
+
+    #groupfile {
+        max-height: 80%;
+    }
+
+    #footerRightAds {
+        display: none;
+    }
+
+    main {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #passportbox {
+        display: none;
+    }
+
+    .login-mark {
+        display: none;
+    }
+
+    .toolbar-btn-vip {
+        display: none;
+    }
+
+    .csdn-common-logo-advert {
+        display: none;
+    }
+
+    .icon-fire {
+        display: none !important;
+    }
+
+    #toolbar-search-input {
+        text-indent: 16px !important;
+    }
+
+    body {
+        min-width: 0;
+    }
+    `;
+    document.head.appendChild(style);
+    resize();
     //未登录复制代码限制
     $('code').css({'user-select':'unset'})
     $('#content_views pre').css({'user-select':'unset'})
@@ -72,23 +122,8 @@
     $('#addAdBox').remove();
     $('#recommendAdBox').remove();
     setTimeout(() => {
-        $('#groupfile').css({
-            'max-height': '80%'
-        });
-        $('#footerRightAds').remove();
-        console.log('56565')
         $('[data-title="登录后复制"]').remove();
-        $("main").css({
-            "float": "none",
-            "margin": "0 auto"
-        });
         resize();
-        //取消注册登录弹出
-        $('#passportbox').remove();
-        $('.login-mark').remove();
-
-        $(".toolbar-btn-vip").remove();
-        $('.csdn-common-logo-advert').remove();
     }, 800)
     // 屏宽适配
 
@@ -108,7 +143,10 @@
             })
             $(".main_father").css({
                 "width": "100%",
+                "cssText": "justify-content: center !important",
             });
+            $("#mainBox").css("margin-left", "8px");
+            $("#csdn-toolbar").css("display", "block");
         } else if (result2.matches) {
             console.log("中屏宽，减小mainBox宽度");
             $("aside").css({
@@ -122,7 +160,10 @@
             });
             $(".main_father").css({
                 "width": "1070px",
+                "cssText": "justify-content: center !important",
             });
+            $("#mainBox").css("margin-left", "8px");
+            $("#csdn-toolbar").css("display", "block");
         } else {
             console.log("小屏宽，隐藏右侧信息栏，mainBox居中");
             $("aside").css({
@@ -136,20 +177,19 @@
             });
             $(".main_father").css({
                 "width": "1010px",
+                "cssText": "justify-content: left !important",
+                "padding-left": "0",
             });
             $(".btns").css("float", "right");
             $(".csdn-toolbar > div").css("width", "870px");
+            $("#mainBox").css("margin-left", "0");
+            $("#csdn-toolbar").css("display", "none");
+            
         }
     }
     window.addEventListener('resize', function () {
         resize();
     });
-    const style = document.createElement('style');
-    style.innerHTML = `
-    .passport-login-container {
-        display: none;
-    }`;
-    document.head.appendChild(style);
     // //显示评论区
     // $('.comment-list-box').css({'display':'block'});
     // $('.comment-list-box').css({'max-height':'870px'});
