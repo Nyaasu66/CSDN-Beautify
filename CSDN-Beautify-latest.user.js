@@ -7,7 +7,7 @@
 // @description:zh-CN   还你一个经典版的CSDN：作者信息和顶部导航栏保留，去掉右边评论区；内容自动展开；去广告；屏宽自动适配；净化剪贴板。
 
 // @namespace    https://github.com/z1064244797/CSDN-Beautify
-// @version      2.9.6
+// @version      2.9.7
 // @author       Nyaasu
 // @match        http*://blog.csdn.net/*/article/details/*
 // @match        http*://csdnnews.blog.csdn.net/article/details/*
@@ -15,7 +15,7 @@
 // @grant        none
 // @license      CC-BY-NC-3.0
 // @supportURL   https://github.com/z1064244797/CSDN-Beautify/issues
-// @date         08/19/2021
+// @date         08/11/2022
 // ==/UserScript==
 
 (function () {
@@ -66,6 +66,18 @@
 
     body {
         min-width: 0;
+    }
+
+    img[src="https://img-home.csdnimg.cn/images/20220805045438.png"] {
+        display: none;
+    }
+    
+    .icon-mp-menu {
+        display: none;
+    }
+
+    #recommendNps {
+        display: none !important;
     }
     `;
     document.head.appendChild(style);
@@ -118,7 +130,7 @@
     // $("a[data-type='vip']").remove();
     // $(".csdn-side-toolbar").remove();
     // $(".vip-caise").remove();
-    $('.csdn-tracking-statistics').remove();
+    // $('.csdn-tracking-statistics').remove();
     $('#addAdBox').remove();
     $('#recommendAdBox').remove();
     setTimeout(() => {
